@@ -8,8 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
     <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -62,6 +60,7 @@
     </style>
 </head>
 <body class="bg-background-dark text-white font-display overflow-x-hidden">
+<div class="w-full overflow-x-hidden">
 
 <nav class="fixed w-full z-50 top-0 left-0 border-b border-white/5 bg-background-dark/80 backdrop-blur-md">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -178,7 +177,7 @@
             </a>
             <a href="#contact" class="px-10 py-4 border border-white/20 text-white font-medium text-lg rounded hover:bg-white/5 transition-all duration-300 w-full sm:w-auto flex items-center justify-center gap-2 group">
                 <span>Рассчитать доходность</span>
-                <span class="material-icons-outlined group-hover:translate-x-1 transition-transform text-primary">trending_up</span>
+                <svg class="w-5 h-5 text-primary group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8L7 21"/></svg>
             </a>
         </div>
     </div>
@@ -189,7 +188,7 @@
     </div>
 </section>
 
-<section id="about" class="py-24 bg-background-dark relative">
+<section id="about" class="py-24 bg-background-dark relative overflow-hidden">
     <div class="absolute top-0 right-0 w-1/3 h-full bg-surface-dark/30 skew-x-12 translate-x-20 pointer-events-none"></div>
     
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -265,28 +264,28 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             <div class="group p-8 rounded bg-background-dark thin-border-gold flex flex-col items-center text-center hover:-translate-y-2 transition-transform duration-300">
                 <div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-background-dark transition-colors text-primary">
-                    <span class="material-icons-outlined text-3xl">show_chart</span>
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941"/></svg>
                 </div>
                 <h3 class="text-xl font-semibold text-white mb-3">Инвесторы</h3>
                 <p class="text-sm text-gray-400 font-light leading-relaxed">Люди, которым нужен стабильный доход и просчитанные риски.</p>
             </div>
             <div class="group p-8 rounded bg-background-dark thin-border-gold flex flex-col items-center text-center hover:-translate-y-2 transition-transform duration-300">
                 <div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-background-dark transition-colors text-primary">
-                    <span class="material-icons-outlined text-3xl">family_restroom</span>
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-12.636l10.5-3.819"/></svg>
                 </div>
                 <h3 class="text-xl font-semibold text-white mb-3">Семьи</h3>
                 <p class="text-sm text-gray-400 font-light leading-relaxed">Частные покупатели, ищущие комфортное жильё для себя.</p>
             </div>
             <div class="group p-8 rounded bg-background-dark thin-border-gold flex flex-col items-center text-center hover:-translate-y-2 transition-transform duration-300">
                 <div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-background-dark transition-colors text-primary">
-                    <span class="material-icons-outlined text-3xl">savings</span>
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                 </div>
                 <h3 class="text-xl font-semibold text-white mb-3">Хранители</h3>
                 <p class="text-sm text-gray-400 font-light leading-relaxed">Люди, которые хотят безопасно сохранить капитал в недвижимости.</p>
             </div>
             <div class="group p-8 rounded bg-background-dark thin-border-gold flex flex-col items-center text-center hover:-translate-y-2 transition-transform duration-300">
                 <div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-background-dark transition-colors text-primary">
-                    <span class="material-icons-outlined text-3xl">security</span>
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
                 </div>
                 <h3 class="text-xl font-semibold text-white mb-3">Прагматики</h3>
                 <p class="text-sm text-gray-400 font-light leading-relaxed">Те, кто не хочет рисковать, переплачивать и тратить время на хаос.</p>
@@ -337,7 +336,7 @@
                 
                 <div class="relative flex flex-col md:items-center md:text-center group">
                     <div class="w-12 h-12 rounded-full border-2 border-gray-600 bg-background-dark flex items-center justify-center text-gray-400 font-bold text-lg mb-4 group-hover:border-primary group-hover:bg-primary group-hover:text-background-dark transition-all duration-300">
-                        <span class="material-icons-outlined text-sm">vpn_key</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25a3 3 0 013 3m3 0a6 6 0 01-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1121.75 8.25z"/></svg>
                     </div>
                     <h4 class="text-lg font-medium text-white mb-2">Ключи</h4>
                     <p class="text-xs text-gray-400">Получение собственности и дохода</p>
@@ -360,7 +359,7 @@
         <div class="flex flex-col gap-6 sm:gap-8 justify-center items-center md:flex-row mb-14">
             <a href="https://t.me/RomanByshin" target="_blank" class="group flex items-center gap-3 sm:gap-4 text-xl sm:text-2xl md:text-3xl text-white hover:text-primary transition-colors">
                 <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-full border border-gray-600 bg-transparent flex items-center justify-center group-hover:bg-primary group-hover:border-primary group-hover:text-background-dark transition-all text-gray-400 flex-shrink-0">
-                    <span class="material-icons-outlined">send</span>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"/></svg>
                 </div>
                 <span class="border-b border-transparent group-hover:border-primary transition-all">@RomanByshin</span>
             </a>
@@ -369,7 +368,7 @@
             
             <a href="tel:+79243777878" class="group flex items-center gap-3 sm:gap-4 text-xl sm:text-2xl md:text-3xl text-white hover:text-primary transition-colors">
                 <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-full border border-gray-600 bg-transparent flex items-center justify-center group-hover:bg-primary group-hover:border-primary group-hover:text-background-dark transition-all text-gray-400 flex-shrink-0">
-                    <span class="material-icons-outlined">call</span>
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
                 </div>
                 <span class="border-b border-transparent group-hover:border-primary transition-all">+7 924 377 7878</span>
             </a>
@@ -440,5 +439,6 @@
     </div>
 </footer>
 
+</div>
 </body>
 </html>
