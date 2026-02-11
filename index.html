@@ -68,11 +68,11 @@
         <div class="flex justify-between items-center h-20">
             <div class="flex-shrink-0 flex items-center gap-3">
                 <div class="w-10 h-10 rounded bg-primary/20 flex items-center justify-center">
-                    <span class="text-primary font-bold text-xl">R</span>
+                    <span class="text-primary font-bold text-xl">Р</span>
                 </div>
                 <div>
-                    <span class="block text-white font-semibold tracking-wide">ROMAN BYSHIN</span>
-                    <span class="block text-primary text-xs uppercase tracking-widest">Broker</span>
+                    <span class="block text-white font-semibold tracking-wide">РОМАН БЫШИН</span>
+                    <span class="block text-primary text-xs uppercase tracking-widest">Брокер</span>
                 </div>
             </div>
             <div class="hidden md:flex items-center space-x-12">
@@ -86,8 +86,9 @@
                 </a>
             </div>
             <div class="md:hidden flex items-center">
-                <button id="burger-btn" onclick="toggleMenu()" class="text-gray-300 hover:text-white z-50 relative">
-                    <span id="burger-icon" class="material-icons-outlined">menu</span>
+                <button id="burger-btn" onclick="toggleMenu()" class="text-gray-300 hover:text-white z-50 relative w-10 h-10 flex items-center justify-center">
+                    <svg id="burger-icon-open" class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                    <svg id="burger-icon-close" class="w-7 h-7 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M6 18L18 6M6 6l12 12"/></svg>
                 </button>
             </div>
         </div>
@@ -126,23 +127,28 @@
 <script>
     function toggleMenu() {
         const menu = document.getElementById('mobile-menu');
-        const icon = document.getElementById('burger-icon');
+        const openIcon = document.getElementById('burger-icon-open');
+        const closeIcon = document.getElementById('burger-icon-close');
         const isOpen = !menu.classList.contains('translate-x-full');
         if (isOpen) {
             menu.classList.add('translate-x-full');
-            icon.textContent = 'menu';
+            openIcon.classList.remove('hidden');
+            closeIcon.classList.add('hidden');
             document.body.style.overflow = '';
         } else {
             menu.classList.remove('translate-x-full');
-            icon.textContent = 'close';
+            openIcon.classList.add('hidden');
+            closeIcon.classList.remove('hidden');
             document.body.style.overflow = 'hidden';
         }
     }
     function closeMenu() {
         const menu = document.getElementById('mobile-menu');
-        const icon = document.getElementById('burger-icon');
+        const openIcon = document.getElementById('burger-icon-open');
+        const closeIcon = document.getElementById('burger-icon-close');
         menu.classList.add('translate-x-full');
-        icon.textContent = 'menu';
+        openIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
         document.body.style.overflow = '';
     }
 </script>
@@ -156,7 +162,7 @@
     
     <div class="relative z-10 max-w-5xl mx-auto px-5 sm:px-6 lg:px-8 text-center">
         <span class="inline-block py-1 px-3 border border-primary/30 rounded-full bg-primary/10 text-primary text-xs font-semibold tracking-widest uppercase mb-4 sm:mb-6 animate-fade-in-up">
-            Premium Real Estate
+            Доходная недвижимость
         </span>
         <h1 class="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-light text-white leading-tight mb-6 sm:mb-8">
             Недвижимость для жизни и дохода — <br class="hidden md:block"/>
@@ -178,7 +184,7 @@
     </div>
     
     <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center opacity-60">
-        <span class="text-xs uppercase tracking-widest text-primary mb-2">Scroll</span>
+        <span class="text-xs uppercase tracking-widest text-primary mb-2">Вниз</span>
         <div class="w-px h-12 bg-gradient-to-b from-primary to-transparent"></div>
     </div>
 </section>
@@ -408,8 +414,8 @@
 <footer class="bg-background-dark border-t border-white/5 py-8 sm:py-12">
     <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-5 sm:gap-6 text-center md:text-left">
         <div class="flex items-center gap-2">
-            <span class="text-primary font-bold">R</span>
-            <span class="text-sm text-gray-500 uppercase tracking-widest">Roman Byshin</span>
+            <span class="text-primary font-bold">Р</span>
+            <span class="text-sm text-gray-500 uppercase tracking-widest">Роман Бышин</span>
         </div>
         
         <!-- Social icons in footer -->
